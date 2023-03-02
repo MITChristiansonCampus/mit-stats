@@ -11,4 +11,5 @@ def home():
 
 @app.route("/appt", methods=['post', 'get'])
 def appt():
-    print (request)
+    print (request.get_json())
+    return "testing"
